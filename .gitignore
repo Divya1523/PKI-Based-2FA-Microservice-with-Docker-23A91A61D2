@@ -1,0 +1,7 @@
+# .gitignore
+
+# Encrypted seed (sensitive, MANDATORY to exclude)
+encrypted_seed.txt
+
+# Local testing data directory (optional, but good practice)
+data_local_test/

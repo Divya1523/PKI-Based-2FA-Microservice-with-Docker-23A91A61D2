@@ -1,0 +1,4 @@
+# /etc/cron.d/app-cron
+0 * * * * appuser /opt/venv/bin/python /app/maintenance/hourly_task.py >> /var/log/app_hourly.log 2>&1
+
+# trailing newline required

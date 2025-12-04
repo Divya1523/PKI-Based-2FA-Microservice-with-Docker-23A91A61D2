@@ -1,0 +1,15 @@
+services:
+  totp-app:
+    image: totp-app:latest
+    build: .
+    environment:
+      - SEED_PATH=/data/seed.txt
+      - TZ=UTC
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./data:/data
+      - ./cron:/cron
+      - ./logs:/var/log
+    restart: unless-stopped
+

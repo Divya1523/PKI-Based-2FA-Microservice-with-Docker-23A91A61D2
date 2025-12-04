@@ -1,0 +1,5 @@
+#!/opt/venv/bin/python
+import logging
+logging.basicConfig(filename="/tmp/app_hourly_test.log", level=logging.INFO)
+logging.info("Hourly maintenance test run")
+print("Done (wrote /tmp/app_hourly_test.log)")
